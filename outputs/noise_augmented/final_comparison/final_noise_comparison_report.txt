@@ -1,0 +1,147 @@
+FINAL NOISE ROBUSTNESS COMPARISON
+========================================
+
+
+CLEAN TEST
+----------------------------------------
+Baseline accuracy: 93.41%
+Noise-augmented accuracy: 89.56%
+Difference: -3.85 percentage points
+
+Baseline classification report:
+              precision    recall  f1-score   support
+
+      Asthma     0.9250    0.8409    0.8810        44
+   Bronchial     0.8125    0.8667    0.8387        15
+        COPD     0.9831    0.9667    0.9748        60
+     Healthy     0.8696    1.0000    0.9302        20
+   Pneumonia     0.9545    0.9767    0.9655        43
+
+    accuracy                         0.9341       182
+   macro avg     0.9089    0.9302    0.9180       182
+weighted avg     0.9358    0.9341    0.9338       182
+
+Noise-augmented classification report:
+              precision    recall  f1-score   support
+
+      Asthma     0.8605    0.8409    0.8506        44
+   Bronchial     0.7647    0.8667    0.8125        15
+        COPD     0.9661    0.9500    0.9580        60
+     Healthy     0.8947    0.8500    0.8718        20
+   Pneumonia     0.8864    0.9070    0.8966        43
+
+    accuracy                         0.8956       182
+   macro avg     0.8745    0.8829    0.8779       182
+weighted avg     0.8973    0.8956    0.8960       182
+
+
+Baseline confusion matrix:
+[[37  3  1  2  1]
+ [ 2 13  0  0  0]
+ [ 1  0 58  0  1]
+ [ 0  0  0 20  0]
+ [ 0  0  0  1 42]]
+
+Noise-augmented confusion matrix:
+[[37  4  0  1  2]
+ [ 2 13  0  0  0]
+ [ 2  0 57  0  1]
+ [ 0  0  1 17  2]
+ [ 2  0  1  1 39]]
+
+
+20 dB TEST
+----------------------------------------
+Baseline accuracy: 32.97%
+Noise-augmented accuracy: 75.27%
+Difference: +42.31 percentage points
+
+Baseline classification report:
+              precision    recall  f1-score   support
+
+      Asthma     0.0000    0.0000    0.0000        44
+   Bronchial     0.0000    0.0000    0.0000        15
+        COPD     0.3297    1.0000    0.4959        60
+     Healthy     0.0000    0.0000    0.0000        20
+   Pneumonia     0.0000    0.0000    0.0000        43
+
+    accuracy                         0.3297       182
+   macro avg     0.0659    0.2000    0.0992       182
+weighted avg     0.1087    0.3297    0.1635       182
+
+Noise-augmented classification report:
+              precision    recall  f1-score   support
+
+      Asthma     0.8140    0.7955    0.8046        44
+   Bronchial     0.7333    0.7333    0.7333        15
+        COPD     0.9057    0.8000    0.8496        60
+     Healthy     0.4103    0.8000    0.5424        20
+   Pneumonia     0.8438    0.6279    0.7200        43
+
+    accuracy                         0.7527       182
+   macro avg     0.7414    0.7513    0.7300       182
+weighted avg     0.8002    0.7527    0.7647       182
+
+
+Baseline confusion matrix:
+[[ 0  0 44  0  0]
+ [ 0  0 15  0  0]
+ [ 0  0 60  0  0]
+ [ 0  0 20  0  0]
+ [ 0  0 43  0  0]]
+
+Noise-augmented confusion matrix:
+[[35  3  0  5  1]
+ [ 3 11  1  0  0]
+ [ 3  1 48  5  3]
+ [ 2  0  1 16  1]
+ [ 0  0  3 13 27]]
+
+
+10 dB TEST
+----------------------------------------
+Baseline accuracy: 32.97%
+Noise-augmented accuracy: 64.29%
+Difference: +31.32 percentage points
+
+Baseline classification report:
+              precision    recall  f1-score   support
+
+      Asthma     0.0000    0.0000    0.0000        44
+   Bronchial     0.0000    0.0000    0.0000        15
+        COPD     0.3297    1.0000    0.4959        60
+     Healthy     0.0000    0.0000    0.0000        20
+   Pneumonia     0.0000    0.0000    0.0000        43
+
+    accuracy                         0.3297       182
+   macro avg     0.0659    0.2000    0.0992       182
+weighted avg     0.1087    0.3297    0.1635       182
+
+Noise-augmented classification report:
+              precision    recall  f1-score   support
+
+      Asthma     0.7200    0.8182    0.7660        44
+   Bronchial     0.8182    0.6000    0.6923        15
+        COPD     0.9211    0.5833    0.7143        60
+     Healthy     0.2500    0.6500    0.3611        20
+   Pneumonia     0.7742    0.5581    0.6486        43
+
+    accuracy                         0.6429       182
+   macro avg     0.6967    0.6419    0.6365       182
+weighted avg     0.7555    0.6429    0.6706       182
+
+
+Baseline confusion matrix:
+[[ 0  0 44  0  0]
+ [ 0  0 15  0  0]
+ [ 0  0 60  0  0]
+ [ 0  0 20  0  0]
+ [ 0  0 43  0  0]]
+
+Noise-augmented confusion matrix:
+[[36  0  0  7  1]
+ [ 3  9  0  3  0]
+ [ 8  2 35 12  3]
+ [ 3  0  1 13  3]
+ [ 0  0  2 17 24]]
+

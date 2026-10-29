@@ -1,0 +1,8 @@
+Noise Augmentation Experiment
+================================
+
+Training samples before augmentation: 847
+Training samples after augmentation: 1694
+Noise SNR levels: 10 dB and 20 dB
+Clean test loss: 0.29907017946243286
+Clean test accuracy: 0.8956043720245361

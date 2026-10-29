@@ -1,0 +1,16 @@
+AI-Based Multi-Class Respiratory Disease Detection
+CNN-BiLSTM Evaluation Report
+
+Test Accuracy: 93.41%
+
+              precision    recall  f1-score   support
+
+      Asthma     0.9250    0.8409    0.8810        44
+   Bronchial     0.8125    0.8667    0.8387        15
+        COPD     0.9831    0.9667    0.9748        60
+     Healthy     0.8696    1.0000    0.9302        20
+   Pneumonia     0.9545    0.9767    0.9655        43
+
+    accuracy                         0.9341       182
+   macro avg     0.9089    0.9302    0.9180       182
+weighted avg     0.9358    0.9341    0.9338       182
