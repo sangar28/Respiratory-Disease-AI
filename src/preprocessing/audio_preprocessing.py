@@ -2,7 +2,10 @@ import os
 import io
 import numpy as np
 import librosa
-import noisereduce as nr
+try:
+    import noisereduce as nr
+except ImportError:
+    nr = None
 from scipy.signal import butter, sosfilt
 
 # ============================================================
@@ -262,6 +265,8 @@ def reduce_noise(audio, sr=TARGET_SR):
     was trained without spectral noise reduction. Keep apply_noise_reduction=False
     for baseline inference.
     """
+    if nr is None:
+        return audio.astype(np.float32)
     try:
         cleaned_audio = nr.reduce_noise(
             y=audio,
